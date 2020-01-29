@@ -1,5 +1,8 @@
 # peça
 
+![Clojure CI](https://github.com/yvendruscolo/peca/workflows/Clojure%20CI/badge.svg?branch=master)
+
+
 Probably the simplest actor-model-ish implementation for clojure you will find out there.
 
 ## Usage
