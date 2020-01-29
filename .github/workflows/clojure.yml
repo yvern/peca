@@ -1,0 +1,19 @@
+name: Clojure CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: lein deps
+    - name: Check formatting
+      run: lein cljfmt check
+    - name: Check syntax
+      run: lein check
+    - name: Run tests
+      run: lein test
