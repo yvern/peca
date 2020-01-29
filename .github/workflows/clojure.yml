@@ -11,6 +11,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: lein deps
+    - name: clj-kondo
+      uses: adriffaud/lint-clojure@v1.1.1
     - name: Check formatting
       run: lein cljfmt check
     - name: Check syntax
